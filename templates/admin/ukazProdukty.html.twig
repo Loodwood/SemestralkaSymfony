@@ -1,0 +1,48 @@
+<table id="recordList" class="table table-dark">
+    <thead>
+    <tr>
+        <th scope="col">Index</th>
+        <th scope="col">Meno produktu</th>
+        <th scope="col">Popis</th>
+        <th scope="col">Cena</th>
+        <th scope="col">Množstvo</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+
+
+        {% for produkt in produkty %}
+
+        <tr>
+                <td>
+                    {{ produkt.getId() }}
+                </td>
+            <td>
+                <input class="nameproduct" value="{{ produkt.getName() }}" type="text">
+            </td>
+            <td>
+                <input class="description" value="{{  produkt.getDescription() }}" type="text">
+            </td>
+            <td>
+                <input class="price" value="{{ produkt.getPrice() }}" type="text">
+            </td>
+            <td>
+                <input class="quantity" value="{{ produkt.getQuantity() }}" type="text">
+            </td>
+            <td>
+                    <button type="button"  value="{{  produkt.getId() }}" class="btn btn-secondary btn-warning editProduct">Edit</button>
+
+
+
+            </td>
+        </tr>
+
+        {% endfor %}
+
+
+
+
+
+    </tbody>
+</table>

@@ -31,9 +31,15 @@ class Order
      */
     private $products;
 
+    /**
+     * @ORM\OneToMany(targetEntity=OrderItem::class, mappedBy="OrderID", orphanRemoval=true)
+     */
+    private $orderItems;
+
     public function __construct()
     {
         $this->products = new ArrayCollection();
+        $this->orderItems = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -73,6 +79,36 @@ class Order
     public function removeProduct(Product $product): self
     {
         $this->products->removeElement($product);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|OrderItem[]
+     */
+    public function getOrderItems(): Collection
+    {
+        return $this->orderItems;
+    }
+
+    public function addOrderItem(OrderItem $orderItem): self
+    {
+        if (!$this->orderItems->contains($orderItem)) {
+            $this->orderItems[] = $orderItem;
+            $orderItem->setOrderID($this);
+        }
+
+        return $this;
+    }
+
+    public function removeOrderItem(OrderItem $orderItem): self
+    {
+        if ($this->orderItems->removeElement($orderItem)) {
+            // set the owning side to null (unless already changed)
+            if ($orderItem->getOrderID() === $this) {
+                $orderItem->setOrderID(null);
+            }
+        }
 
         return $this;
     }

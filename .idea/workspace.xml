@@ -11,20 +11,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="243e9372-b79b-4fa5-93d4-8dc24fe78a1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ProduktyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/TreningController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/objednavkyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Somfit/objednavky.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Somfit/produkty.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Somfit/trening.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Somfit/treningy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/admin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/ukazPouzivatelov.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/ukazProdukty.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/ukazTreningy.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/AppCustomAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/AppCustomAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,10 +166,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\janho\OneDrive\Desktop\vajsko symfony bez dema\src\Controller" />
+      <recent name="C:\Users\janho\OneDrive\Desktop\vajsko symfony bez dema\templates\admin" />
+      <recent name="C:\Users\janho\OneDrive\Desktop\vajsko symfony bez dema\src\Form" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -154,6 +190,13 @@
       <option name="presentableId" value="Default" />
       <updated>1610106278918</updated>
       <workItem from="1610106280020" duration="8564000" />
+      <workItem from="1610477897040" duration="3476000" />
+      <workItem from="1610541705890" duration="600000" />
+      <workItem from="1610795450397" duration="23640000" />
+      <workItem from="1610878375605" duration="17214000" />
+      <workItem from="1610960426178" duration="15782000" />
+      <workItem from="1611061279612" duration="29673000" />
+      <workItem from="1611137013451" duration="2562000" />
     </task>
     <servers />
   </component>
@@ -170,15 +213,62 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1610110876271">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1610110876271" />
+    <state x="661" y="74" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610825553016">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="661" y="74" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1610825553016" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611150888340">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611150888340" />
+    <state x="707" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1610482596061">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="707" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1610482596061" />
     <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1610117294542">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1610117294542" />
+    <state x="744" y="478" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611075649424">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="744" y="478" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611075649424" />
+    <state x="229" y="34" width="1246" height="1059" key="dock-window-1" timestamp="1611078305723">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="229" y="34" width="1246" height="1059" key="dock-window-1/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611078305723" />
+    <state x="199" y="-9" width="1352" height="1066" key="dock-window-2" timestamp="1611090163291">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="199" y="-9" width="1352" height="1066" key="dock-window-2/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611090163291" />
+    <state x="454" y="0" width="1352" height="1066" key="dock-window-3" timestamp="1611088981131">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="454" y="0" width="1352" height="1066" key="dock-window-3/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611088981131" />
+    <state x="584" y="0" width="1352" height="1066" key="dock-window-4" timestamp="1611137643050">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="584" y="0" width="1352" height="1066" key="dock-window-4/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611137643050" />
+    <state x="584" y="0" width="1352" height="1066" key="dock-window-4/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611090490020" />
+    <state x="667" y="273" width="585" height="534" key="find.popup" timestamp="1611150267483">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="667" y="273" width="585" height="534" key="find.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611150267483" />
+    <state x="582" y="264" key="run.anything.popup" timestamp="1611074913638">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="582" y="264" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611074913638" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1611150475634">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611150475634" />
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611086890934" />
   </component>
 </project>

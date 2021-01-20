@@ -1,0 +1,48 @@
+<table id="recordList" class="table table-dark">
+    <thead>
+    <tr>
+        <th scope="col">Index</th>
+        <th scope="col">Meno produktu</th>
+        <th scope="col">Cena</th>
+        <th scope="col">Popis</th>
+
+
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+
+
+        {% for trening in treningy %}
+
+        <tr>
+                <td>
+                    {{ trening.getId() }}
+                </td>
+            <td>
+                <input class="nametrening" value="{{ trening.getName() }}" type="text">
+            </td>
+            <td>
+                <input class="pricetrening" value="{{ trening.getPrice() }}" type="text">
+            </td>
+            <td>
+                <input class="descriptiontrening" value="{{  trening.getDescription() }}" type="text">
+            </td>
+
+
+            <td>
+                    <button type="button"  value="{{  trening.getId() }}" class="btn btn-warning editTrening">Edit</button>
+
+
+
+            </td>
+        </tr>
+
+        {% endfor %}
+
+
+
+
+
+    </tbody>
+</table>
