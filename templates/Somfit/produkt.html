@@ -1,0 +1,47 @@
+
+
+{% extends "base.html.twig" %}
+
+
+
+{% block body %}
+{% if not app.user %}
+<div class="p-3 mb-2 bg-success text-white">Nie si prihlásený. Ak sa chceš niečo objednať, tak sa prihlás alebo zaregistruj.</div>
+{% endif %}
+
+<div class="card col-sm-6 col-xs-12 p-0 ">
+
+    <div class="card-body">
+        <h5 class="card-title">{{ product.getName() }}</h5>
+        <img class="card-img-top w-55" src="{{ asset('produkty/') }}{{ product.getName() }}.jpg" alt="Card image cap">
+        <p class="card-text">{{ product.getDescription() }}</p>
+        <p>{{ product.getPrice() }} €</p>
+
+            {% if not app.user %}
+
+                Nie si prihlásený.
+
+            {% endif %}
+        {% if app.user %}
+
+
+
+        <div class="row">
+        <form action="/produkty/objednaj">
+            <div class="col-sm">
+            <label for="quantity">Počet kusov:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+            </div>
+
+            <input type="hidden" name="productId" id="productId" value="{{ product.getId() }}">
+            <div class="col-sm"></div>
+            <input type="submit" value="Objednaj!" >
+        </form>
+        </div>
+
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}

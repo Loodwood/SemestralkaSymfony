@@ -1,0 +1,35 @@
+
+
+{% extends "base.html.twig" %}
+
+{% block body_id %}{% endblock %}
+
+
+
+
+
+
+
+{% block body %}
+
+<div class="row">
+        <div class=" col-sm-6 col-xs-12 p-0">
+                <div class="hovereffect">
+                        <img class="img-responsive w-100 h-100" src="{{ asset('produkt.jpg') }}" alt="">
+                        <div class="overlay">
+                                <h2>Nájdi a vyber si jednotlivé produkty do košíka.</h2>
+                                <a class="info" href="produkty">Prejdi na produkty.</a>
+                        </div>
+                </div>
+        </div>
+        <div class=" col-sm-6 col-xs-12 p-0">
+                <div class="hovereffect">
+                        <img class="img-responsive w-100 h-100" src="{{ asset('biceps.jpg') }}" alt="">
+                        <div class="overlay">
+                                <h2>Vyber si jeden z našich tréningových programov a začni na sebe pracovať.</h2>
+                                <a class="info" href="treningy">Prejdi na tréning.</a>
+                        </div>
+                </div>
+        </div>
+</div>
+{% endblock %}
