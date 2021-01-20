@@ -11,28 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="243e9372-b79b-4fa5-93d4-8dc24fe78a1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/javascript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ProduktyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TreningController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/objednavkyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Somfit/objednavky.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Somfit/produkty.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Somfit/trening.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Somfit/treningy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/ukazPouzivatelov.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/ukazProdukty.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/ukazTreningy.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/carousel/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/carousel/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/javascript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProduktyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProduktyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/objednavkyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/objednavkyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/AppCustomAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/AppCustomAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Somfit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Somfit/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Somfit/objednavky.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Somfit/objednavky.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Somfit/produkty.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Somfit/produkty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/ukazTreningy.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/ukazTreningy.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,13 +162,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Entity" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\janho\OneDrive\Desktop\vajsko symfony bez dema\src\Entity" />
       <recent name="C:\Users\janho\OneDrive\Desktop\vajsko symfony bez dema\src\Controller" />
       <recent name="C:\Users\janho\OneDrive\Desktop\vajsko symfony bez dema\templates\admin" />
       <recent name="C:\Users\janho\OneDrive\Desktop\vajsko symfony bez dema\src\Form" />
@@ -196,7 +191,7 @@
       <workItem from="1610878375605" duration="17214000" />
       <workItem from="1610960426178" duration="15782000" />
       <workItem from="1611061279612" duration="29673000" />
-      <workItem from="1611137013451" duration="2562000" />
+      <workItem from="1611137013451" duration="24441000" />
     </task>
     <servers />
   </component>
@@ -240,10 +235,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="744" y="478" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611075649424" />
-    <state x="229" y="34" width="1246" height="1059" key="dock-window-1" timestamp="1611078305723">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="1913" y="0" width="1017" height="1087" key="dock-window-1" timestamp="1611158282870">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="229" y="34" width="1246" height="1059" key="dock-window-1/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611078305723" />
+    <state x="1913" y="0" width="1017" height="1087" key="dock-window-1/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611158282870" />
     <state x="199" y="-9" width="1352" height="1066" key="dock-window-2" timestamp="1611090163291">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -257,14 +252,14 @@
     </state>
     <state x="584" y="0" width="1352" height="1066" key="dock-window-4/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611137643050" />
     <state x="584" y="0" width="1352" height="1066" key="dock-window-4/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611090490020" />
-    <state x="667" y="273" width="585" height="534" key="find.popup" timestamp="1611150267483">
+    <state x="667" y="273" width="585" height="534" key="find.popup" timestamp="1611166610981">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="667" y="273" width="585" height="534" key="find.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611150267483" />
-    <state x="582" y="264" key="run.anything.popup" timestamp="1611074913638">
+    <state x="667" y="273" width="585" height="534" key="find.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611166610981" />
+    <state x="582" y="264" key="run.anything.popup" timestamp="1611158636509">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="582" y="264" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611074913638" />
+    <state x="582" y="264" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611158636509" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1611150475634">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

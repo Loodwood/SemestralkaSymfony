@@ -46,7 +46,7 @@ class ProduktyController extends AbstractController
             );
         }
         return $this->render('Somfit/produkt.html', ['product' => $product]);
-        return new Response('Check out this great product: '.$product->getName());
+
     }
     /**
      * @Route("/produkty/objednaj", name="objednaj")
@@ -76,7 +76,7 @@ class ProduktyController extends AbstractController
 
 
 
-      //  return $this->render('Somfit/produkt.html');
+        return $this->render('Somfit/ponuka.html');
         return new Response('Check out this great product: ');
     }
 

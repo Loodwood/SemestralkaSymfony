@@ -26,10 +26,7 @@ class Order
      */
     private $user;
 
-    /**
-     * @ORM\ManyToMany(targetEntity=Product::class)
-     */
-    private $products;
+
 
     /**
      * @ORM\OneToMany(targetEntity=OrderItem::class, mappedBy="OrderID", orphanRemoval=true)
@@ -38,7 +35,7 @@ class Order
 
     public function __construct()
     {
-        $this->products = new ArrayCollection();
+
         $this->orderItems = new ArrayCollection();
     }
 
@@ -59,29 +56,7 @@ class Order
         return $this;
     }
 
-    /**
-     * @return Collection|Product[]
-     */
-    public function getProducts(): Collection
-    {
-        return $this->products;
-    }
 
-    public function addProduct(Product $product): self
-    {
-        if (!$this->products->contains($product)) {
-            $this->products[] = $product;
-        }
-
-        return $this;
-    }
-
-    public function removeProduct(Product $product): self
-    {
-        $this->products->removeElement($product);
-
-        return $this;
-    }
 
     /**
      * @return Collection|OrderItem[]

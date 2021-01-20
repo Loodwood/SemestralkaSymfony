@@ -1,8 +1,65 @@
 {% extends "base.html.twig" %}
 {% block body %}
 
-{% if  app.user %}
 
-{% endif %}
+<div class="height">
+    <table id="recordList" class="text-center table table-light border">
+    <thead >
+    <tr >
+
+        <th class="border" scope="col">Meno produktu</th>
+        <th class="border" scope="col"></th>
+        <th class="border" scope="col">Cena</th>
+        <th class="border" scope="col">Množstvo</th>
+
+
+        <th></th>
+    </tr>
+    </thead>
+    <tbody class="text-center">
+    {% for objednavka in objednavky %}
+        <tr>
+    <div class="row border text-center" >
+
+
+    {% for order in orderItem %}
+
+
+        {% if objednavka.getId() == order.getOrderID().getId() %}
+            {% for product in producty %}
+                {% if product.getId() == order.getProductID().getId() %}
+                     <td class="border text-center">
+                         <p>  {{ product.getName() }}</p>
+                     </td>
+                    <td class="border">
+                        <img src="{{ asset('produkty/') }}{{ product.getName() }}.jpg" alt="" class="small-image">
+                    </td >
+                     <td class="border">
+                         <p> {{ product.getPrice() }}</p>
+                     </td>
+                     <td class=" border-left border-top border-right">
+                        <p> {{ order.getQuantity() }}</p>
+                     </td>
+
+
+                {% endif %}
+
+
+            {% endfor %}
+
+        {% endif %}
+
+
+    {% endfor %}
+
+    </div>
+        </tr>
+
+    {% endfor %}
+    </tbody>
+    </table>
+</div>
+
+
 
 {% endblock %}

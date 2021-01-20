@@ -1,17 +1,32 @@
 body{
     background-image:url("../background.jpg") ;
     min-height: 100vh;
+
+}
+.height{
+    min-height: 800px;
 }
 #bodyInfo {
     width: 100%;
+}
+.carousel-caption{
+bottom: 80%;
 }
 .container .gall{
     background-color:  rgb(201, 201, 201);
     width:95%;
 }
+td p {
+    color:black;
+   font-size: 30px;
+}
 p{
     color:white;
 
+}
+.small-image{
+    width: 100px;
+    height: 100px;
 }
 div.transparent {
     padding: 30px;

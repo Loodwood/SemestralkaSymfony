@@ -45,6 +45,10 @@ $( document ).ready(function() {
                         name: row.find(".name").first().val(),
                         surname: row.find(".surname").first().val()
                     }
+                    if (dataInputs.userName.length==0||dataInputs.name.length==0||dataInputs.surname.length==0){
+                        alert("Máš prázdne inputy.")
+                        return;
+                    }
 
                     $.ajax({
                         url: "/admin/pouzivatelia/edit/"+button.val(),
@@ -125,7 +129,14 @@ $( document ).ready(function() {
                         price: row.find(".price").first().val(),
                         quantity: row.find(".quantity").first().val()
                     }
-
+                    if (dataInputs.nameproduct.length==0||dataInputs.description.length==0){
+                        alert("Máš prázdne inputy.")
+                        return;
+                    }
+                    if(typeof dataInputs.price=="number"||typeof dataInputs.quantity=="number"){
+                        alert("Zadal si text to čísiel.")
+                        return;
+                    }
                     $.ajax({
                         url: "/admin/produkty/edit/"+button.val(),
                         type: "POST",
@@ -181,6 +192,15 @@ $( document ).ready(function() {
 
                     }
 
+                    if (dataInputs.nametrening.length==0||dataInputs.descriptiontrening.length==0){
+                        alert("Máš prázdne inputy.")
+                        return;
+                    }
+                    if(typeof dataInputs.pricetrening=="number"){
+                        alert("Zadal si text to čísiel.")
+                        return;
+                    }
+
                     $.ajax({
                         url: "/admin/treningy/edit/"+button.val(),
                         type: "POST",
@@ -201,7 +221,11 @@ $( document ).ready(function() {
                         .always (function(jqXHROrData, textStatus, jqXHROrErrorThrown) {
                         });
                 });
+                $("input.nametrening,input.pricetrening,input.descriptiontrening").blur(function (){
+                    let row=$(this).closest("tr");
+                    row.find(".editTrening").trigger("click");
 
+                })
             })
 
             .fail (function(jqXHR, textStatus, errorThrown) {

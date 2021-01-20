@@ -20,13 +20,13 @@
                     {{ trening.getId() }}
                 </td>
             <td>
-                <input class="nametrening" value="{{ trening.getName() }}" type="text">
+                <input class="nametrening" value="{{ trening.getName() }}" type="text" required>
             </td>
             <td>
-                <input class="pricetrening" value="{{ trening.getPrice() }}" type="text">
+                <input  class="pricetrening" value="{{ trening.getPrice() }}" type="number" required>
             </td>
             <td>
-                <input class="descriptiontrening" value="{{  trening.getDescription() }}" type="text">
+                <input class="descriptiontrening" value="{{  trening.getDescription() }}" type="text" required>
             </td>
 
 
