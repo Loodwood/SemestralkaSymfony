@@ -2,32 +2,33 @@
 
 {% block title %}Register{% endblock %}
 {% block header_navigation_links %}{% endblock %}
- {% block stylesheets %}<link href="{{ asset('css/login.css') }}" rel="stylesheet"/>{% endblock %}
+ {% block stylesheets %}
+     <link href="{{ asset('css/login.css') }}" rel="stylesheet"/>{% endblock %}
 {% block body %}
 
     {% for flashError in app.flashes('verify_email_error') %}
         <div class="alert alert-danger" role="alert">{{ flashError }}</div>
     {% endfor %}
 
-<div class="container ">
-    <div class="d-flex justify-content-center h-100">
-        <div class="card p-4">
-            <h1 class="color">Registruj Sa</h1>
+    <div class="container ">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card p-4">
+                <h1 class="color">Registruj Sa</h1>
 
-            {{ form_start(registrationForm) }}
-            <div class="color">  {{ form_row(registrationForm.username,{'label': 'Prihlasovacie meno','attr': {'class': 'form-control'}}) }} </div>
-                    <div class="color">       {{ form_row(registrationForm.plainPassword, {
-                    label: 'Heslo','attr': {'class': 'form-control'}
-                }) }}</div>
-                        <div class="color">     {{ form_row(registrationForm.name,{'label': 'Krstné meno','attr': {'class': 'form-control'}}) }}</div>
-                            <div class="color">   {{ form_row(registrationForm.surname,{'label': 'Priezvisko','attr': {'class': 'form-control'}}) }}</div>
-                                <div class="color">    {{ form_row(registrationForm.agreeTerms,{'label': 'Potvrď podmienky','attr': {'class': 'ml-1 '}}) }}</div>
+                {{ form_start(registrationForm) }}
+                <div class="color">  {{ form_row(registrationForm.username,{'label': 'Prihlasovacie meno','attr': {'class': 'form-control'}}) }} </div>
+                <div class="color">       {{ form_row(registrationForm.plainPassword, {
+                        label: 'Heslo','attr': {'class': 'form-control'}
+                    }) }}</div>
+                <div class="color">     {{ form_row(registrationForm.name,{'label': 'Krstné meno','attr': {'class': 'form-control'}}) }}</div>
+                <div class="color">   {{ form_row(registrationForm.surname,{'label': 'Priezvisko','attr': {'class': 'form-control'}}) }}</div>
+                <div class="color">    {{ form_row(registrationForm.agreeTerms,{'label': 'Potvrď podmienky','attr': {'class': 'ml-1 '}}) }}</div>
 
                 <button class="btn btn-lg btn-primary" type="submit" class="btn">Register</button>
-            {{ form_end(registrationForm) }}
+                {{ form_end(registrationForm) }}
+            </div>
         </div>
     </div>
-</div>
 
 {% endblock %}
 {% block footer %}{% endblock %}

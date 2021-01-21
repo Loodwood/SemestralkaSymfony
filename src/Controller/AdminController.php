@@ -55,7 +55,7 @@ class AdminController extends AbstractController
         $produkt = $this->getDoctrine()
             ->getRepository(Product::class)->find($id);
         $udaje = $request->get("inputs");
-        if (empty($udaje["nameproduct"]) ||  empty($udaje["description"]) ||  empty($udaje["quantity"])) {
+        if (empty($udaje["nameproduct"]) || empty($udaje["description"]) || empty($udaje["quantity"])) {
             return $this->json([
                 "message" => "Zadal si prázdne imputy.",
 
@@ -63,7 +63,7 @@ class AdminController extends AbstractController
 
         }
 
-        if(!is_numeric($udaje["price"])) {
+        if (!is_numeric($udaje["price"])) {
             return $this->json([
                 "message" => "Zadal si text do čísel.",
 
@@ -106,7 +106,7 @@ class AdminController extends AbstractController
             ->getRepository(User::class)->find($id);
 
         $udaje = $request->get("inputs");
-        if (empty($udaje["userName"]) ||  empty($udaje["name"]) ||  empty($udaje["surname"])) {
+        if (empty($udaje["userName"]) || empty($udaje["name"]) || empty($udaje["surname"])) {
             return $this->json([
                 "message" => "Zadal si prázdne imputy.",
 
@@ -191,7 +191,7 @@ class AdminController extends AbstractController
             ]);
 
         }
-        if(!is_numeric($udaje["pricetrening"])){
+        if (!is_numeric($udaje["pricetrening"])) {
             return $this->json([
                 "message" => "Zadal si text do čísel.",
 

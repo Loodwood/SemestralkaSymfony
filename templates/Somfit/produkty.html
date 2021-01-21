@@ -2,34 +2,36 @@
 {% block body %}
 
 {% if not app.user %}
-<div class="p-3 mb-2 bg-success text-white">Nie si prihlásený. Ak sa chceš niečo objednať, tak sa prihlás alebo zaregistruj.</div>
+<div class="p-3 mb-2 bg-success text-white">Nie si prihlásený. Ak sa chceš niečo objednať, tak sa prihlás alebo
+    zaregistruj.
+</div>
 {% endif %}
 <div class="container-fluid gall">
     <div class="px-lg-5">
         <div class="row">
-{% for product in produkty %}
+            {% for product in produkty %}
 
 
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class=" bg-white rounded shadow-sm">
+                    <div class="hovereffect">
+                        <img src="{{ asset('produkty/') }}{{ product.getName() }}.jpg" alt=""
+                             class="img-fluid card-img-top">
+                        <div class="overlay">
+                            <a class="" href="produkty/daj/{{ product.getID() }}"><h2>Podrobnosti</h2></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h2><a href="#" class="text-dark">{{ product.getName() }}</a></h2>
+                        <h4>{{ product.getPrice() }} €</h4>
 
-    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class=" bg-white rounded shadow-sm">
-            <div class="hovereffect">
-                <img src="{{ asset('produkty/') }}{{ product.getName() }}.jpg" alt="" class="img-fluid card-img-top">
-                <div class="overlay">
-                    <a class="" href="produkty/daj/{{ product.getID() }}"><h2>Podrobnosti</h2></a>
+                    </div>
                 </div>
             </div>
-            <div class="p-4">
-                <h2> <a href="#" class="text-dark">{{ product.getName() }}</a></h2>
-                <h4>{{ product.getPrice() }} €</h4>
 
-            </div>
+
+            {% endfor %}
         </div>
     </div>
-
-
-{% endfor %}
-</div>
-</div>
 </div>
 {% endblock %}

@@ -1,7 +1,6 @@
 <?php
 
 
-
 namespace App\Controller;
 
 use App\Entity\TrainingProgram;
@@ -15,8 +14,6 @@ class TreningController extends AbstractController
 {
 
 
-
-
     /**
      * @Route("/treningy", name="treningy")
      */
@@ -27,6 +24,7 @@ class TreningController extends AbstractController
         $treningy = $repository->findAll();
         return $this->render('somfit/treningy.html', ['treningy' => $treningy]);
     }
+
     /**
      * @Route("/treningy/daj/{id}", name="ukaz_trening")
      */
@@ -37,16 +35,17 @@ class TreningController extends AbstractController
             ->find($id);
         if (!$trening) {
             throw $this->createNotFoundException(
-                'No trening found for id '.$id
+                'No trening found for id ' . $id
             );
         }
         return $this->render('Somfit/trening.html', ['trening' => $trening]);
 
     }
+
     /**
      * @Route("/treningy/pridaj", name="pridaj_trening")
      */
-    public function pridajTrening(Request $request,UserInterface $user): Response
+    public function pridajTrening(Request $request, UserInterface $user): Response
     {
         $id = $request->get("treningId");
         $trening = $this->getDoctrine()
@@ -54,21 +53,21 @@ class TreningController extends AbstractController
             ->find($id);
         if (!$trening) {
             throw $this->createNotFoundException(
-                'No trening found for id '.$id
+                'No trening found for id ' . $id
             );
         }
-       $userTrening = $user->getTrainingProgram();
+        $userTrening = $user->getTrainingProgram();
 
-        if($userTrening){
+        if ($userTrening) {
             return $this->json([
-                "message"=>"Už si zapísaný v treningovom pláne. Ak si ho chceš zmeniť priď osobne alebo zavolaj na : 09845481."
+                "message" => "Už si zapísaný v treningovom pláne. Ak si ho chceš zmeniť priď osobne alebo zavolaj na : 09845481."
             ]);
         }
-       $user->setTrainingProgram($trening);
+        $user->setTrainingProgram($trening);
         $this->getDoctrine()->getManager()->persist($user);
         $this->getDoctrine()->getManager()->flush();
         return $this->json([
-            "message"=>"Zapísal si sa na tréning."
+            "message" => "Zapísal si sa na tréning."
         ]);
     }
 

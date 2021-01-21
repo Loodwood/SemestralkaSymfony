@@ -1,12 +1,11 @@
-
-
 {% extends "base.html.twig" %}
-
 
 
 {% block body %}
 {% if not app.user %}
-<div class="p-3 mb-2 bg-success text-white">Nie si prihlásený. Ak sa chceš zapísať na tréning, tak sa prihlás alebo zaregistruj.</div>
+<div class="p-3 mb-2 bg-success text-white">Nie si prihlásený. Ak sa chceš zapísať na tréning, tak sa prihlás alebo
+    zaregistruj.
+</div>
 {% endif %}
 
 <div class="card col-sm-6 col-xs-12 p-0 ">
@@ -17,16 +16,16 @@
         <p class="card-text">{{ trening.getDescription() }}</p>
         <p>{{ trening.getPrice() }} €</p>
 
-            {% if app.user %}
+        {% if app.user %}
 
-            <button class="btn btn-lg btn-primary" value="{{trening.getID}}" id="trening" >
-                Pridaj si tento tréning
-            </button>
-            {% endif %}
+        <button class="btn btn-lg btn-primary" value="{{trening.getID}}" id="trening">
+            Pridaj si tento tréning
+        </button>
+        {% endif %}
 
         {% if not app.user %}
         <button class="btn btn-lg btn-primary" type="submit">
-            <h2> <a href="../../login" class="text-dark">Presmerovanie na prihlásenie.</a></h2>
+            <h2><a href="../../login" class="text-dark">Presmerovanie na prihlásenie.</a></h2>
 
         </button>
 

@@ -12,17 +12,17 @@
     <tbody>
 
 
-        {% for produkt in produkty %}
+    {% for produkt in produkty %}
 
         <tr>
-                <td>
-                    {{ produkt.getId() }}
-                </td>
+            <td>
+                {{ produkt.getId() }}
+            </td>
             <td>
                 <input class="nameproduct" value="{{ produkt.getName() }}" type="text">
             </td>
             <td>
-                <input class="description" value="{{  produkt.getDescription() }}" type="text">
+                <input class="description" value="{{ produkt.getDescription() }}" type="text">
             </td>
             <td>
                 <input class="price" value="{{ produkt.getPrice() }}" type="text">
@@ -31,17 +31,15 @@
                 <input class="quantity" value="{{ produkt.getQuantity() }}" type="text">
             </td>
             <td>
-                    <button type="button"  value="{{  produkt.getId() }}" class="btn btn-secondary btn-warning editProduct">Edit</button>
-
+                <button type="button" value="{{ produkt.getId() }}" class="btn btn-secondary btn-warning editProduct">
+                    Edit
+                </button>
 
 
             </td>
         </tr>
 
-        {% endfor %}
-
-
-
+    {% endfor %}
 
 
     </tbody>

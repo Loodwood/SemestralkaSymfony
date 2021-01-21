@@ -13,35 +13,31 @@
     <tbody>
 
 
-        {% for trening in treningy %}
+    {% for trening in treningy %}
 
         <tr>
-                <td>
-                    {{ trening.getId() }}
-                </td>
+            <td>
+                {{ trening.getId() }}
+            </td>
             <td>
                 <input class="nametrening" value="{{ trening.getName() }}" type="text" required>
             </td>
             <td>
-                <input  class="pricetrening" value="{{ trening.getPrice() }}" type="number" required>
+                <input class="pricetrening" value="{{ trening.getPrice() }}" type="number" required>
             </td>
             <td>
-                <input class="descriptiontrening" value="{{  trening.getDescription() }}" type="text" required>
+                <input class="descriptiontrening" value="{{ trening.getDescription() }}" type="text" required>
             </td>
 
 
             <td>
-                    <button type="button"  value="{{  trening.getId() }}" class="btn btn-warning editTrening">Edit</button>
-
+                <button type="button" value="{{ trening.getId() }}" class="btn btn-warning editTrening">Edit</button>
 
 
             </td>
         </tr>
 
-        {% endfor %}
-
-
-
+    {% endfor %}
 
 
     </tbody>

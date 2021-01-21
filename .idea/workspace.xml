@@ -12,20 +12,25 @@
   <component name="ChangeListManager">
     <list default="true" id="243e9372-b79b-4fa5-93d4-8dc24fe78a1f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/carousel/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/carousel/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/javascript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProduktyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProduktyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TreningController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TreningController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/objednavkyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/objednavkyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Somfit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Somfit/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Somfit/objednavky.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Somfit/objednavky.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Somfit/ponuka.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Somfit/ponuka.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Somfit/produkt.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Somfit/produkt.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Somfit/produkty.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Somfit/produkty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Somfit/trening.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Somfit/trening.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Somfit/treningy.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Somfit/treningy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/ukazPouzivatelov.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/ukazPouzivatelov.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/ukazProdukty.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/ukazProdukty.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/ukazTreningy.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/ukazTreningy.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +196,8 @@
       <workItem from="1610878375605" duration="17214000" />
       <workItem from="1610960426178" duration="15782000" />
       <workItem from="1611061279612" duration="29673000" />
-      <workItem from="1611137013451" duration="24441000" />
+      <workItem from="1611137013451" duration="25602000" />
+      <workItem from="1611210471564" duration="3471000" />
     </task>
     <servers />
   </component>
@@ -252,10 +258,10 @@
     </state>
     <state x="584" y="0" width="1352" height="1066" key="dock-window-4/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611137643050" />
     <state x="584" y="0" width="1352" height="1066" key="dock-window-4/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611090490020" />
-    <state x="667" y="273" width="585" height="534" key="find.popup" timestamp="1611166610981">
+    <state x="667" y="273" width="585" height="534" key="find.popup" timestamp="1611212331693">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="667" y="273" width="585" height="534" key="find.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611166610981" />
+    <state x="667" y="273" width="585" height="534" key="find.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1611212331693" />
     <state x="582" y="264" key="run.anything.popup" timestamp="1611158636509">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

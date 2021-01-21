@@ -12,12 +12,12 @@
     <tbody>
 
 
-        {% for pouzivatel in pouzivatelia %}
+    {% for pouzivatel in pouzivatelia %}
 
         <tr>
-                <td>
-                    {{ pouzivatel.getId() }}
-                </td>
+            <td>
+                {{ pouzivatel.getId() }}
+            </td>
             <td>
                 <input class="userName" value="{{ pouzivatel.getUsername() }}" type="text">
             </td>
@@ -30,18 +30,20 @@
             <td>
                 <input class="surname" value="{{ pouzivatel.getSurname() }}" type="text">
             </td>
-            <td><div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button"  value="{{ pouzivatel.getId() }}" class="btn btn-secondary btn-warning editUser">Edit</button>
-                    <button type="button"  value="{{ pouzivatel.getId() }}" class="btn btn-secondary btn-danger deleteUser">Delete</button>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" value="{{ pouzivatel.getId() }}"
+                            class="btn btn-secondary btn-warning editUser">Edit
+                    </button>
+                    <button type="button" value="{{ pouzivatel.getId() }}"
+                            class="btn btn-secondary btn-danger deleteUser">Delete
+                    </button>
 
                 </div>
             </td>
         </tr>
 
-        {% endfor %}
-
-
-
+    {% endfor %}
 
 
     </tbody>

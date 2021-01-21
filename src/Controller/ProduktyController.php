@@ -1,7 +1,6 @@
 <?php
 
 
-
 namespace App\Controller;
 
 use App\Entity\Order;
@@ -19,8 +18,6 @@ class ProduktyController extends AbstractController
 {
 
 
-
-
     /**
      * @Route("/produkty", name="produkty")
      */
@@ -31,6 +28,7 @@ class ProduktyController extends AbstractController
         $produkty = $repository->findAll();
         return $this->render('somfit/produkty.html', ['produkty' => $produkty]);
     }
+
     /**
      * @Route("/produkty/daj/{id}", name="ukaz_produkt")
      */
@@ -42,16 +40,17 @@ class ProduktyController extends AbstractController
             ->find($id);
         if (!$product) {
             throw $this->createNotFoundException(
-                'No product found for id '.$id
+                'No product found for id ' . $id
             );
         }
         return $this->render('Somfit/produkt.html', ['product' => $product]);
 
     }
+
     /**
      * @Route("/produkty/objednaj", name="objednaj")
      */
-    public function objednajProdukt(Request $request,UserInterface $user): Response
+    public function objednajProdukt(Request $request, UserInterface $user): Response
     {
         $productID = $request->get("productId");
         $quantity = $request->get("quantity");
@@ -75,9 +74,8 @@ class ProduktyController extends AbstractController
         $this->getDoctrine()->getManager()->flush();
 
 
-
         return $this->render('Somfit/ponuka.html');
-        return new Response('Check out this great product: ');
+
     }
 
 

@@ -1,7 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Log in!{% endblock %}
- {% block stylesheets %}<link href="{{ asset('css/login.css') }}" rel="stylesheet"/>{% endblock %}
+ {% block stylesheets %}
+     <link href="{{ asset('css/login.css') }}" rel="stylesheet"/>{% endblock %}
 {% block header_navigation_links %}{% endblock %}
 {% block body %}
 <form method="post">
@@ -21,34 +22,36 @@
                     <h3>Prihlásenie</h3>
                 </div>
                 <div class="card-body">
-    <label for="inputUsername"></label>
+                    <label for="inputUsername"></label>
 
-    <input type="text" value="{{ last_username }}" placeholder="Meno" name="username" id="inputUsername" class="form-control" required autofocus>
-    <label for="inputPassword"></label>
+                    <input type="text" value="{{ last_username }}" placeholder="Meno" name="username" id="inputUsername"
+                           class="form-control" required autofocus>
+                    <label for="inputPassword"></label>
 
-    <input placeholder="Heslo" type="password" name="password" id="inputPassword" class="form-control" required>
+                    <input placeholder="Heslo" type="password" name="password" id="inputPassword" class="form-control"
+                           required>
 
-    <input type="hidden" name="_csrf_token"
-           value="{{ csrf_token('authenticate') }}"
-    >
+                    <input type="hidden" name="_csrf_token"
+                           value="{{ csrf_token('authenticate') }}"
+                    >
                 </div>
-    {#
-        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
-        See https://symfony.com/doc/current/security/remember_me.html
+                {#
+                Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+                See https://symfony.com/doc/current/security/remember_me.html
 
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" name="_remember_me"> Remember me
-            </label>
-        </div>
-    #}
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" name="_remember_me"> Remember me
+                    </label>
+                </div>
+                #}
 
-    <button class="btn btn-lg btn-primary" type="submit">
-        Prihlás sa
-    </button>
+                <button class="btn btn-lg btn-primary" type="submit">
+                    Prihlás sa
+                </button>
+            </div>
         </div>
     </div>
-    </div>
 
-{% block footer %}{% endblock %}
-{% endblock %}
+    {% block footer %}{% endblock %}
+    {% endblock %}

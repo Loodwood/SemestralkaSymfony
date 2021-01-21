@@ -1,15 +1,13 @@
-
-
 {% extends "base.html.twig" %}
 
 {% block body %}
 <div class="row">
-{% for trening in treningy %}
+    {% for trening in treningy %}
     <div class=" col-sm-3 col-xs-12 p-0">
         <div class="hovereffect">
             <img class="img-responsive w-100 h-100" src="{{ asset('treningy/') }}{{ trening.getID() }}.jpg" alt="">
             <div class="overlay">
-                <h2> <a href="#" class="text-white">{{ trening.getName() }}</a></h2>
+                <h2><a href="#" class="text-white">{{ trening.getName() }}</a></h2>
                 <h2>Už od {{ trening.getPrice() }} €</h2>
                 <a class="info" href="treningy/daj/{{ trening.getID }}">Klikni pre viac informácii.</a>
             </div>
@@ -18,7 +16,7 @@
     </div>
 
 
-{% endfor %}
+    {% endfor %}
 </div>
 
 {% endblock %}
